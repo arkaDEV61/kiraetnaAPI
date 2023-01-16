@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_menu_item_menu_items",
+  "info": {
+    "displayName": "menu_item"
+  },
+  "options": {},
+  "attributes": {
+    "menu_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-item.menu-item"
+    }
+  }
+}
