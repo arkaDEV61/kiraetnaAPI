@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_primjer_primjers",
+  "info": {
+    "displayName": "primjer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "audio": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

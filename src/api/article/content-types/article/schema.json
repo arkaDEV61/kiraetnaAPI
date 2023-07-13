@@ -59,6 +59,23 @@
     },
     "title_arabic": {
       "type": "string"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "primjeri": {
+      "type": "dynamiczone",
+      "components": [
+        "primjer.primjer"
+      ]
     }
   }
 }
