@@ -7,8 +7,8 @@ module.exports = [
           useDefaults: true,
           directives: {
             'connect-src': ["'self'", 'https:'],
-            'img-src': ["'self'", 'data:', 'blob:', `${process.env.FTP_ASSET_URL}`],
-            'media-src': ["'self'", 'data:', 'blob:', `${process.env.FTP_ASSET_URL}`],
+            'img-src': ["'self'", 'data:', 'blob:', `${process.env.FTP_BASE_PATH}`],
+            'media-src': ["'self'", 'data:', 'blob:', `${process.env.FTP_BASE_PATH}`],
             upgradeInsecureRequests: null,
           },
         },
