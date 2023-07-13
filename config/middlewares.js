@@ -1,6 +1,19 @@
 module.exports = [
   'strapi::errors',
-  'strapi::security',
+   {
+      name: 'strapi::security',
+      config: {
+        contentSecurityPolicy: {
+          useDefaults: true,
+          directives: {
+            'connect-src': ["'self'", 'https:'],
+            'img-src': ["'self'", 'data:', 'blob:', `${process.env.FTP_ASSET_URL}`],
+            'media-src': ["'self'", 'data:', 'blob:', `${process.env.FTP_ASSET_URL}`],
+            upgradeInsecureRequests: null,
+          },
+        },
+      },
+    },
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
